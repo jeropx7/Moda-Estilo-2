@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Moda y Estilo</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css?v=1.1">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MODA <span>Y ESTILO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video.html">video</li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a class="btn btn-carrito-nav" href="carrito.html">
+                            🛒 Carrito (<span id="contador">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5 my-auto">
+        <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm max-w-1000 mx-auto">
+            <h1 class="text-center mb-4">🛒 Mi Carrito</h1>
+
+            <div id="lista-carrito" class="d-flex flex-column gap-3 mb-4"></div>
+
+            <div class="text-end my-4">
+                <h3 class="fw-bold">Total: $<span id="total">0</span></h3>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-secondary w-100 py-3 fw-bold" onclick="vaciarCarrito()">🗑 Vaciar carrito</button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success w-100 py-3 fw-bold" onclick="enviarWhatsApp()">📱 Comprar por WhatsApp</button>
+                </div>
+                <div class="col-md-4">
+                    <a href="catalogo.html" class="btn btn-dark w-100 py-3 fw-bold text-decoration-none">← Seguir comprando</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 text-center mt-auto">
+        <div class="container">
+            <h4 class="mb-2">MODA Y ESTILO</h4>
+            <p class="text-muted small mb-3">Elegancia que se adapta a ti · Moda a medida · Sostenibilidad</p>
+            <p class="small text-secondary mb-0">© 2026 Moda y Estilo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carrito.js"></script>
+</body>
+</html>

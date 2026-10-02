@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda y Estilo - Inicio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css?v=1.1">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MODA <span>Y ESTILO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a class="btn btn-carrito-nav" href="carrito.html">
+                            🛒 Carrito (<span id="contador">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section d-flex align-items-center text-center py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-uppercase mb-2" style="letter-spacing: 3px;">Moda Ejecutiva y Sostenible</p>
+                    <h1 class="display-3 fw-bold mb-3">Viste tu esencia</h1>
+                    <p class="lead mb-4">Prendas confeccionadas para mujeres que buscan elegancia, comodidad y estilo.</p>
+                    <a href="catalogo.html" class="btn btn-oscuro px-4 py-3">VER CATÁLOGO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 container text-center">
+        <h2 class="mb-3">Moda que habla de ti</h2>
+        <p class="text-muted mx-auto mb-5" style="max-width: 650px;">En Moda y Estilo creamos prendas a medida combinando diseño, elegancia y responsabilidad con el medio ambiente.</p>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                    <div class="fs-1 mb-3">✂️</div>
+                    <h4>Confección a medida</h4>
+                    <p class="text-muted mb-0">Diseños adaptados a tu personalidad y estilo.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                    <div class="fs-1 mb-3">🌱</div>
+                    <h4>Moda sostenible</h4>
+                    <p class="text-muted mb-0">Trabajamos con alternativas textiles responsables.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                    <div class="fs-1 mb-3">✨</div>
+                    <h4>Elegancia</h4>
+                    <p class="text-muted mb-0">Prendas modernas para destacar en cada ocasión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white border-top border-bottom">
+        <div class="container">
+            <h2 class="text-center mb-5">Productos destacados</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-producto h-100">
+                        <img src="img/blusa_saten_azul.jpg" class="card-img-top" alt="Blusa ejecutiva">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title fs-4">Blusa Ejecutiva</h5>
+                            <p class="text-muted mb-2">Diseño elegante y fresco</p>
+                            <p class="precio-producto">$85.000</p>
+                            <button class="btn btn-oscuro mt-auto" onclick="agregarAlCarrito('Blusa Ejecutiva', 85000, 'mg/blusa_saten_azul.jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-producto h-100">
+                        <img src="img/e3074ee09c4b4934eeb52621728bbb2c.jpg" class="card-img-top" alt="Vestido ejecutivo">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title fs-4">Vestido Ejecutivo</h5>
+                            <p class="text-muted mb-2">Elegancia para cualquier ocasión</p>
+                            <p class="precio-producto">$150.000</p>
+                            <button class="btn btn-oscuro mt-auto" onclick="agregarAlCarrito('Vestido Ejecutivo', 150000, 'img/e3074ee09c4b4934eeb52621728bbb2c.jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-producto h-100">
+                        <img src="img/Conjunto-de-pijama-de-sat-n-de-seda-para-Mujer-ropa-de-dormir-de-manga-larga.avif" class="card-img-top" alt="Conjunto de pijama">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title fs-4">Conjunto De Pijama</h5>
+                            <p class="text-muted mb-2">Profesional y moderno</p>
+                            <p class="precio-producto">$180.000</p>
+                            <button class="btn btn-oscuro mt-auto" onclick="agregarAlCarrito('Conjunto De Pijama', 180000, 'img/Conjunto-de-pijama-de-sat-n-de-seda-para-Mujer-ropa-de-dormir-de-manga-larga.avif')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="py-5 border-bottom" style="background-color: var(--fondo-claro, #f8f5f0);">
+        <div class="container py-2">
+            <h2 class="text-center mb-5 fw-bold" style="color: var(--color-oscuro, #111111);">Lo que dicen nuestras clientas</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded-4 shadow-sm h-100 text-start d-flex flex-column border">
+                        <div class="mb-3 fs-5" style="color: var(--color-dorado, #c9a227);">⭐⭐⭐⭐⭐</div>
+                        <p class="fst-italic mb-4 flex-grow-1 text-secondary" style="font-size: 0.95rem; line-height: 1.6;">
+                            "El pedido llegó superrápido a mi casa. La calidad de la tela y los acabados de la ropa ejecutiva son impecables."
+                        </p>
+                        <h6 class="fw-bold mb-0" style="color: var(--color-oscuro, #111111);">— Camila R.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded-4 shadow-sm h-100 text-start d-flex flex-column border">
+                        <div class="mb-3 fs-5" style="color: var(--color-dorado, #c9a227);">⭐⭐⭐⭐⭐</div>
+                        <p class="fst-italic mb-4 flex-grow-1 text-secondary" style="font-size: 0.95rem; line-height: 1.6;">
+                            "Excelente atención al cliente. Las prendas ajustan perfecto al cuerpo y el diseño sostenible me encanta."
+                        </p>
+                        <h6 class="fw-bold mb-0" style="color: var(--color-oscuro, #111111);">— Carolina Mendoza</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-white p-4 rounded-4 shadow-sm h-100 text-start d-flex flex-column border">
+                        <div class="mb-3 fs-5" style="color: var(--color-dorado, #c9a227);">⭐⭐⭐⭐⭐</div>
+                        <p class="fst-italic mb-4 flex-grow-1 text-secondary" style="font-size: 0.95rem; line-height: 1.6;">
+                            "El vestido ejecutivo llegó hermoso, tal como se veía en el catálogo. Repetiré compra seguro."
+                        </p>
+                        <h6 class="fw-bold mb-0" style="color: var(--color-oscuro, #111111);">— Elena G.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center mt-auto">
+        <div class="container">
+            <h4 class="mb-2">MODA Y ESTILO</h4>
+            <p class="text-muted small mb-3">Elegancia que se adapta a ti · Moda a medida · Sostenibilidad</p>
+            <p class="small text-secondary mb-0">© 2026 Moda y Estilo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carrito.js"></script>
+</body>
+</html>

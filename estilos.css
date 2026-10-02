@@ -1,0 +1,134 @@
+:root {
+    --color-dorado: #c9a227;
+    --color-dorado-hover: #b08d1e;
+    --color-oscuro: #111111;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f5f0;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* NAVBAR */
+.navbar-custom {
+    background-color: var(--color-oscuro) !important;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff !important;
+}
+
+.navbar-brand span {
+    color: var(--color-dorado);
+    font-weight: 400;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--color-dorado) !important;
+}
+
+.btn-carrito-nav {
+    background-color: var(--color-dorado);
+    color: var(--color-oscuro) !important;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 8px 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-carrito-nav:hover {
+    background-color: #e5b82e;
+    transform: translateY(-2px);
+}
+
+/* HERO CON FONDO OSCURO DE RESPALDO */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), whitesmoke), 
+                url('img/logo\ moda.jpg') center/cover no-repeat;
+    background-color: whitesmoke; /* Fondo oscuro por si falla la imagen */
+    min-height: 65vh;
+    color: #ffffff !important;
+}
+
+.hero-section h1, .hero-section p {
+    color: #ffffff !important;
+}
+
+/* TARJETAS DE PRODUCTO */
+.card-producto {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    background: white;
+}
+
+.card-producto:hover {
+    transform: translateY(-5px);
+}
+
+.card-producto img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.precio-producto {
+    color: var(--color-dorado);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.btn-oscuro {
+    background-color: var(--color-oscuro);
+    color: white !important;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-oscuro:hover {
+    background-color: var(--color-dorado);
+    color: var(--color-oscuro) !important;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-oscuro);
+    color: white;
+}
+
+/* ESTILOS PARA LA SECCIÓN DE VIDEO */
+.contenedor-video {
+    background-color: #000000;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-presentacion {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    display: block;
+    object-fit: contain;
+}
